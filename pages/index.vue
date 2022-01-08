@@ -3,36 +3,17 @@
     <section class="intro">
       <h1>Get the latest tech news!</h1>
     </section>
-    <section class="featured-posts">
-      <PostPreview
-        :id="1"
-        :thumbnail="'https://www.hydrocarbons-technology.com/wp-content/uploads/sites/9/2020/09/shutterstock_1152185600-1440x1008-1-857x600.jpg'"
-        :title="'Post 1'"
-        :preview="'Post 1 Preview'"
-      ></PostPreview>
-      <PostPreview
-        :id="2"
-        :thumbnail="'https://www.hydrocarbons-technology.com/wp-content/uploads/sites/9/2020/09/shutterstock_1152185600-1440x1008-1-857x600.jpg'"
-        :title="'Post 2'"
-        :preview="'Post 2 Preview'"
-      ></PostPreview>
-      <PostPreview
-        :id="3"
-        :thumbnail="'https://www.hydrocarbons-technology.com/wp-content/uploads/sites/9/2020/09/shutterstock_1152185600-1440x1008-1-857x600.jpg'"
-        :title="'Post 3'"
-        :preview="'Post 3 Preview'"
-      ></PostPreview>
-    </section>
+    <PostList />
   </div>
 </template>
 
 <script>
-import PostPreview from "@/components/Posts/PostPreview";
+import PostList from "@/components/Posts/PostList";
 
 export default {
   name: "IndexPage",
   components: {
-    PostPreview,
+    PostList,
   },
 };
 </script>
